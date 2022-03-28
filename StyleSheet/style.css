@@ -2,3 +2,21 @@ body{
 background-image:url("Background.png") ;
 background-repeat: no-repeat;
 }
+.carousel-item{
+    height: 32rem;
+    background-color:#e6f2ff;
+    position: relative;
+    border: 2px;
+}
+
+.container{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #131acf;;
+}
