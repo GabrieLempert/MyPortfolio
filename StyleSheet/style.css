@@ -21,7 +21,9 @@ header .container{
     background-color: #131acf;;
 }
 
-
+.main{
+    margin: 0;
+}
 .container{
     width: 100%;
 }
@@ -30,5 +32,10 @@ header .container{
     width: 100%;
     background-color: #d0e1e180;
 }
+
+.card{
+    margin: 5px;
+}
+
 
 
