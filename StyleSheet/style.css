@@ -31,11 +31,17 @@ header .container{
     margin: 10px;
     width: 100%;
     background-color: #d0e1e180;
+    border-radius: 25px;
+
 }
 
 .card{
     margin: 5px;
 }
 
-
-
+.container .col-12{
+    background-color:   #668cff;
+    border-radius: 25px;
+    color:  #0033cc
+    ;
+}
