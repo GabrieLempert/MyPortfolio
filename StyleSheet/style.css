@@ -23,6 +23,7 @@ header .container{
 
 .main{
     margin: 0;
+    align-content: center;
 }
 .container{
     width: 100%;
