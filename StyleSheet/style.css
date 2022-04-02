@@ -1,7 +1,7 @@
 body{
 background-image:url("Background.png") ;
 background-repeat: no-repeat;
-align-content: center;
+font-family: 'Arima Madurai', cursive;
 }
 .carousel-item{
     height: 20rem;
@@ -27,6 +27,7 @@ header .container{
 }
 .container{
     width: 100%;
+    
 }
 .row{
     margin: 10px;
@@ -38,11 +39,41 @@ header .container{
 
 .card{
     margin: 5px;
+    border: solid 1px #555;
 }
 
 .container .col-12{
     background-color:   #668cff;
     border-radius: 25px;
-    color:  #0033cc
-    ;
+    color:  #0033cc;
+    font-family: 'Lobster Two', cursive;
+    border: solid 1px #555;
+    box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    border-radius:25px;
+
 }
+
+.blockquote-footer{
+    color: #e6ffff;
+    font-size: 16px;
+
+}
+
+.blockquote{
+    font-family: 'Arima Madurai', cursive;
+}
+
+
+.row > figure {
+    background-color: #6675ff;
+    margin-top: 20px;
+    border: solid 1px #555;
+    box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.2);
+    -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    border-radius:25px;
+    }
