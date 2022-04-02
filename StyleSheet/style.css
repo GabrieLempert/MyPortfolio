@@ -1,6 +1,7 @@
 body{
 background-image:url("Background.png") ;
 background-repeat: no-repeat;
+align-content: center;
 }
 .carousel-item{
     height: 20rem;
@@ -23,7 +24,6 @@ header .container{
 
 .main{
     margin: 0;
-    align-content: center;
 }
 .container{
     width: 100%;
