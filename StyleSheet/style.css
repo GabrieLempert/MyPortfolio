@@ -2,7 +2,7 @@ body{
 background-image:url("Background.png") ;
 background-repeat: no-repeat;
 font-family: 'Arima Madurai', cursive;
-background-size: covers;
+background-size: cover;
 }
 .carousel-item{
     height: 48rem;
