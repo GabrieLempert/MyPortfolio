@@ -4,6 +4,7 @@ background-repeat: no-repeat;
 font-family: 'Arima Madurai', cursive;
 background-size: cover;
 }
+
 .carousel-item{
     height: 48rem;
     background-color:#e6f2ff;
@@ -32,7 +33,7 @@ header .first-item{
     width: 100%;
     
 }
-main >.row{
+.main >.row{
     margin: 10px;
     width: 100%;
     background-color: #d0e1e180;
