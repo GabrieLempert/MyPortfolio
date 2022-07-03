@@ -20,9 +20,8 @@
         padding-bottom: 50px;
     }
     
-    .carousel-indicators [data-bs-target] {
+    header .carousel-indicators [data-bs-target] {
         background-color: #131acf;
-        ;
     }
     
     .main {
@@ -103,7 +102,6 @@
         margin-top: 10px;
     }
     
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        color: black;
+    .fa-brands {
+        cursor: pointer;
     }
