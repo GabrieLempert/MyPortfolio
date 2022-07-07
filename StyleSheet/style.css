@@ -1,107 +1,154 @@
-    body {
-        background-image: url("Background.png");
-        background-repeat: no-repeat;
-        font-family: 'Arima Madurai', cursive;
-        background-size: cover;
-    }
-    
-    header .carousel-item {
-        height: 48rem;
-        background-color: #e6f2ff;
-        position: relative;
-        border: 2px;
-    }
-    
-    header .first-item {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 50px;
-    }
-    
-    header .carousel-indicators [data-bs-target] {
-        background-color: #131acf;
-    }
-    
-    .main {
-        margin: 0;
-    }
-    
-    .main>.row {
-        margin: 10px;
-        width: 100%;
-        border-radius: 25px;
-    }
-    
-    .card {
-        box-shadow: 5px -10px rgba(0, 0, 0, 0.2);
-        margin: 5px;
-        border: solid 1px #555;
-    }
-    
-    .container .col-12 {
-        background-color: #668cff;
-        border-radius: 25px;
-        color: #0033cc;
-        border: solid 1px #555;
-        box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
-        border-radius: 25px;
-    }
-    
-    .blockquote-footer {
-        color: #e6ffff;
-        font-size: 16px;
-    }
-    
-    .section {
-        height: 46.5rem;
-    }
-    
-    .row>figure {
-        background-color: #6675ff;
-        margin-top: 20px;
-        border: solid 1px #555;
-        box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-        -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
-        border-radius: 25px;
-    }
-    
-    header .col-3 {
-        border-radius: 25px;
-        margin: 10px;
-        height: 45rem;
-        text-align: center;
-        background-color: #e6e5e5;
-    }
-    
-    .section .card {
-        box-shadow: none;
-    }
-    
-    .section .col-4>.card::before {
-        content: "";
-        position: absolute;
-        height: 40%;
-        width: 100%;
-        background-color: #0033cc;
-    }
-    
-    .section .col-4 .card>img {
-        border-radius: 50%;
-        /* width: 10.5vw;
+        body {
+            background-image: url("Background.png");
+            background-repeat: no-repeat;
+            font-family: 'Arima Madurai', cursive;
+            background-size: cover;
+        }
+        
+        header .carousel-item {
+            height: 48rem;
+            background-color: #e6f2ff;
+            position: relative;
+            border: 2px;
+        }
+        
+        header .first-item {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            background-color: #131acf;
+        }
+        
+        .main {
+            margin: 0;
+        }
+        
+        .main>.row {
+            margin: 10px;
+            width: 100%;
+            border-radius: 25px;
+        }
+        
+        .card {
+            box-shadow: 5px -10px rgba(0, 0, 0, 0.2);
+            margin: 5px;
+            border: solid 1px #555;
+        }
+        
+        .container .col-12 {
+            background-color: #668cff;
+            border-radius: 25px;
+            color: #0033cc;
+            border: solid 1px #555;
+            box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+            border-radius: 25px;
+        }
+        
+        .blockquote-footer {
+            color: #e6ffff;
+            font-size: 16px;
+        }
+        
+        .section {
+            height: 46.5rem;
+        }
+        
+        .row>figure {
+            background-color: #6675ff;
+            margin-top: 20px;
+            border: solid 1px #555;
+            box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
+            -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+            border-radius: 25px;
+        }
+        
+        header .col-3 {
+            border-radius: 25px;
+            margin: 10px;
+            height: 45rem;
+            text-align: center;
+            background-color: #e6e5e5;
+        }
+        
+        .section .card {
+            box-shadow: none;
+        }
+        
+        .section .col-4>.card::before {
+            content: "";
+            position: absolute;
+            height: 40%;
+            width: 100%;
+            background-color: #0033cc;
+        }
+        
+        .section .col-4 .card>img {
+            border-radius: 50%;
+            /* width: 10.5vw;
         height: 10.5vw; */
-        align-self: center;
-        border: solid 3px blue;
-        z-index: 100;
-        margin-top: 10px;
-    }
-    
-    .fa-brands {
-        cursor: pointer;
-    }
+            align-self: center;
+            border: solid 3px blue;
+            z-index: 100;
+            margin-top: 10px;
+        }
+        
+        .fa-brands {
+            cursor: pointer;
+        }
+        
+        .carousel-item .card {
+            height: 450px;
+            margin-left: -25%;
+            margin-top: 45px;
+            width: 500px;
+        }
+        
+        .carousel-item .card .card-img {
+            display: none;
+        }
+        
+        @media screen and (max-width:790px) {
+            .carousel-item img {
+                display: none;
+            }
+            .carousel-item .card {
+                height: 500px;
+                align-self: center;
+                margin-top: 0;
+                margin-left: 0;
+            }
+            .carousel-item .card .card-body {
+                align-self: center;
+            }
+            .carousel-item .card .card-body {
+                align-self: center;
+            }
+            .carousel-item .card .card-img {
+                display: block;
+            }
+        }
+        
+        @media screen and (min-width:790px) and (max-width:990px) {
+            .carousel-item .card {
+                height: 350px;
+                align-self: center;
+                margin-top: -120px;
+                margin-left: 0;
+            }
+            .carousel-item .card .card-body {
+                align-self: center;
+            }
+            .carousel-item .card .card-body {
+                align-self: center;
+            }
+        }
