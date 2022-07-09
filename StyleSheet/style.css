@@ -122,7 +122,7 @@
                 display: none;
             }
             .carousel-item .card {
-                height: 500px;
+                height: 520px;
                 align-self: center;
                 margin-top: 0;
                 margin-left: 0;
@@ -136,11 +136,14 @@
             .carousel-item .card .card-img {
                 display: block;
             }
+            .card .card-header {
+                display: none;
+            }
         }
         
         @media screen and (min-width:790px) and (max-width:990px) {
             .carousel-item .card {
-                height: 350px;
+                height: 320px;
                 align-self: center;
                 margin-top: -120px;
                 margin-left: 0;
@@ -151,4 +154,8 @@
             .carousel-item .card .card-body {
                 align-self: center;
             }
+        }
+        
+        carousel-control-next {
+            color: black
         }
