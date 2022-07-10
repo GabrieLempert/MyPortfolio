@@ -1,48 +1,61 @@
 async function getProject() {
-    const response = await fetch("https://api.github.com/users/GabrieLempert/repos")
-    const projects = await response.json()
+    let response = await fetch("https://api.github.com/users/GabrieLempert/repos")
+    let projects = await response.json();
 
-    let card_number = document.getElementsByClassName("project-name").length;
-    for (var i = 0; i < card_number; i++) {
-        document.getElementsByClassName("project-name")[i].innerHTML = projects[i].name;
-    }
     return projects;
+
+}
+async function changeString(index) {
+    let projects = await getProject();
+
+    let project_card = `
+    <div class="row justify-content-center">
+        <img class="col-lg-8" src="StyleSheet/Working.jpg"/>
+        <div class="col-xl-3 col-md-4 card ">
+            <div class="card-header text-center ">
+             ${projects[index].name}
+            </div>
+            <img src="StyleSheet/Working.jpg" class="card-img" />
+            <div class="card-body ">
+                <h5 class="card-title ">
+    
+                </h5>
+                <p class="card-text">${projects[index].description}</p>
+                <center>
+                    <a class="github-ref" href=${projects[index].html_url}>
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </center>
+            </div>
+            <div class="card-footer text-muted text-center ">
+                2 days ago
+            </div>
+        </div>
+    `;
+
+    return project_card
 }
 
-project = getProject()
-let project_card = `<div class="carousel-item container">
-<div class="row justify-content-center ">
-    <img class="col-lg-8 " src="StyleSheet/Working.jpg " />
-    <div class="col-xl-3 col-md-4 card ">
-        <div class="card-header text-center ">
-            Featured
-        </div>
-        <img src="StyleSheet/Working.jpg " class="card-img " />
-        <div class="card-body ">
-            <h5 class="card-title ">Special title treatment
 
-            </h5>
-            <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-            <center>
-                <a class="github-ref ">
-                    <i class="fa-brands fa-github fa-2x "></i>
-                </a>
-            </center>
-        </div>
-        <div class="card-footer text-muted text-center ">
-            2 days ago
-        </div>
-    </div>
-</div>
+function addCarouselItem() {
+    const check = document.createElement('div')
+    check.classList.add('carousel-item')
+    check.classList.add('container')
+    return check
+}
 
-</div>`
+async function createNewElement() {
+    let project_carousel = document.getElementById("projects-carousel");
+    let carousel_item = project_carousel.getElementsByClassName("carousel-inner");
 
 
+    let projects = await getProject()
+    for (let index = 1; index < projects.length; index++) {
+        carousel_item[0].append(addCarouselItem())
+        let card = await changeString(index)
+        carousel_item[0].getElementsByClassName('carousel-item')[index].innerHTML = card
 
+    }
+}
 
-/*let length = document.getElementsByClassName("carousel-inner")[1].getElementsByClassName('carousel-item').length
-    let carousel_item = document.getElementsByClassName("carousel-inner")[1].childNodes
-    for (let index = 0; index < carousel_item.length; index++) {
-        console.log(carousel_item[index])
-
-    }*/
+createNewElement()
