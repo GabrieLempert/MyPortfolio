@@ -36,6 +36,13 @@ async function changeString(index) {
     return project_card
 }
 
+function addFirstItem() {
+    const check = document.createElement('div')
+    check.classList.add('carousel-item')
+    check.classList.add('container')
+    check.classList.add('active')
+    return check
+}
 
 function addCarouselItem() {
     const check = document.createElement('div')
@@ -50,10 +57,15 @@ async function createNewElement() {
 
 
     let projects = await getProject()
-    for (let index = 1; index < projects.length; index++) {
-        carousel_item[0].append(addCarouselItem())
+    for (let index = 0; index < projects.length; index++) {
+        if (index == 0) {
+            carousel_item[0].append(addFirstItem())
+        } else {
+            carousel_item[0].append(addCarouselItem())
+        }
         let card = await changeString(index)
-        carousel_item[0].getElementsByClassName('carousel-item')[index].innerHTML = card
+
+        carousel_item[0].getElementsByClassName("carousel-item")[index].innerHTML = card
 
     }
 }
