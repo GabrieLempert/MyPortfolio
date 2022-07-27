@@ -28,7 +28,7 @@ async function changeString(index) {
                 </center>
             </div>
             <div class="card-footer text-muted text-center ">
-                2 days ago
+                Languges: ${projects[index].language}
             </div>
         </div>
     `;

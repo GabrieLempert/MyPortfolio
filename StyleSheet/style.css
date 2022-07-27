@@ -111,6 +111,7 @@
             margin-left: -25%;
             margin-top: 45px;
             width: 500px;
+            padding-left: 0;
         }
         
         .carousel-item .card .card-img {
@@ -158,4 +159,13 @@
         
         carousel-control-next {
             color: black
+        }
+        
+        .card-footer {
+            width: 500px;
+            padding: 0;
+        }
+        
+        .card-header {
+            width: 500px;
         }
