@@ -1,171 +1,162 @@
+        *{
+            margin:0;
+            padding:0;
+        }
         body {
             background-image: url("Background.png");
             background-repeat: no-repeat;
-            font-family: 'Arima Madurai', cursive;
+            font-family: 'Open Sans', sans-serif;
             background-size: cover;
+            box-sizing: border-box;
+            overflow-x: hidden;
         }
         
-        header .carousel-item {
-            height: 48rem;
-            background-color: #e6f2ff;
+        header nav{
             position: relative;
-            border: 2px;
+            color: whitesmoke;
+            width:100%;
+            height: 3rem;
+            margin-bottom: 5px;
+            box-sizing: border-box ;
+            background-color: rgba(77, 68, 153, 0.8);
         }
-        
-        header .first-item {
+        nav ul{
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding-bottom: 50px;
+            left: 68%;
+            list-style: none;
+            display: flex;
+            margin-top: 0.8rem;
         }
-        
-        .carousel-indicators [data-bs-target] {
-            background-color: #131acf;
+        nav li {
+            color:white;
+            display: inline;    
+            margin: 2px 4px 6px 8px;
         }
-        
-        .main {
-            margin: 0;
+        .btn-primary{
+            font-size: 14px;
+            background-color: #6675ff;
         }
-        
-        .main>.row {
-            margin: 10px;
+        nav #profile-pic{
+            width: 50px;
+            height:50px;
+            border:solid black 2px;
+            border-radius: 50%;
+        }
+
+        .navbar-brand{
+            margin-top: 0.5rem;
+            margin-left:15px;
+            border:linear-gradient(90deg,rgb(32, 26, 117),rgb(10, 62, 114));
+        }
+        #about{
+            margin-top:0;
+            color: white;
+            background-color: rgba(77, 68, 153, 0.8);
+            height: 20rem;
             width: 100%;
-            border-radius: 25px;
+        }
+        #about .container-fluid {
+            padding-top: 7px;
+            top: 15%;   
+            position: absolute;
+        }
+        #about h1,#about p {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 5px;
+        
+        }
+        #about h1{
+            margin-bottom: 20px;
+        }
+        #about .row .col-lg-6{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
         
-        .card {
-            box-shadow: 5px -10px rgba(0, 0, 0, 0.2);
-            margin: 5px;
-            border: solid 1px #555;
+        #about a i{
+            color: whitesmoke;
+            margin:0 5px  0 5px;
         }
-        
-        .container .col-12 {
-            background-color: #668cff;
-            border-radius: 25px;
-            color: #0033cc;
-            border: solid 1px #555;
-            box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
-            border-radius: 25px;
+        /*TEMP*/
+        section[id="jobs"]{
+            margin: 10px;
         }
-        
+        /*TEMP*/
         .blockquote-footer {
-            color: #e6ffff;
+            color: #8165c6;
             font-size: 16px;
         }
-        
-        .section {
-            height: 46.5rem;
+        hr:not([size]){
+            width: 45%;
+
         }
         
-        .row>figure {
-            background-color: #6675ff;
+        figure {
             margin-top: 20px;
-            border: solid 1px #555;
-            box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.2);
-            -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
-            border-radius: 25px;
-        }
-        
-        header .col-3 {
-            border-radius: 25px;
-            margin: 10px;
-            height: 45rem;
-            text-align: center;
-            background-color: #e6e5e5;
-        }
-        
-        .section .card {
-            box-shadow: none;
-        }
-        
-        .section .col-4>.card::before {
-            content: "";
-            position: absolute;
-            height: 40%;
             width: 100%;
-            background-color: #0033cc;
         }
-        
-        .section .col-4 .card>img {
-            border-radius: 50%;
-            /* width: 10.5vw;
-        height: 10.5vw; */
-            align-self: center;
-            border: solid 3px blue;
-            z-index: 100;
-            margin-top: 10px;
+        li{
+            list-style: none;
+        }   
+        li > i:hover{
+            margin-right: 8px;
         }
-        
-        .fa-brands {
+        .fa-angle-right:hover{
+            font-size: 3rem;
+            color: azure;
             cursor: pointer;
+
         }
-        
-        .carousel-item .card {
-            height: 450px;
-            margin-left: -25%;
-            margin-top: 45px;
-            width: 500px;
-            padding-left: 0;
+        .fa-angle-right{
+            font-size: 1.5rem;
         }
-        
-        .carousel-item .card .card-img {
-            display: none;
+        h2{
+            text-align: center;
         }
-        
-        @media screen and (max-width:790px) {
-            .carousel-item img {
-                display: none;
-            }
-            .carousel-item .card {
-                height: 520px;
-                align-self: center;
-                margin-top: 0;
-                margin-left: 0;
-            }
-            .carousel-item .card .card-body {
-                align-self: center;
-            }
-            .carousel-item .card .card-body {
-                align-self: center;
-            }
-            .carousel-item .card .card-img {
-                display: block;
-            }
-            .card .card-header {
-                display: none;
-            }
+       h2 *{
+        margin: 10px;
+       }
+        .career-path *{
+            margin: 5px;
+
         }
-        
-        @media screen and (min-width:790px) and (max-width:990px) {
-            .carousel-item .card {
-                height: 320px;
-                align-self: center;
-                margin-top: -120px;
-                margin-left: 0;
-            }
-            .carousel-item .card .card-body {
-                align-self: center;
-            }
-            .carousel-item .card .card-body {
-                align-self: center;
-            }
+
+       section{
+        margin-bottom: 50px;
+       }
+        section[id="projects"] .h1{
+            display: flexbox;
+            text-align: center;
+            float: inline-start;
         }
-        
-        carousel-control-next {
-            color: black
+
+       /* section[id="projects"]{
+            position: relative;
         }
-        
-        .card-footer {
-            width: 500px;
-            padding: 0;
+        section[id="projects"] .row{
+            position: absolute;
+
+        }*/
+        #jobs .work-info{
+            height: 100%;
+            border:#0033cc 2px solid;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+            left:40%;
         }
-        
-        .card-header {
-            width: 500px;
-        }
+        .job-title{
+            background-color: rgba(68, 65, 65, 0.2);
+            text-align: center;
+            font-weight: 300;
+            margin:0;
+            padding-top: 4px;            border-bottom:rgba(68, 65, 65, 0.2) solid 2px; 
+           }
+       
+           .job-role{
+            text-align: center;
+           }
+        /* --------    Need To check this lines                 --- */
+      

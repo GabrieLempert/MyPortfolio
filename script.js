@@ -1,5 +1,6 @@
 async function getProject() {
-    let response = await fetch("https://api.github.com/users/GabrieLempert/repos")
+    //https://api.github.com/users/GabrieLempert/repos
+    let response = await fetch("projects.json")
     let projects = await response.json();
 
     return projects;
@@ -70,4 +71,23 @@ async function createNewElement() {
     }
 }
 
-createNewElement()
+function showJobInfo(){
+    let jobsObj ={
+        "QA and NOC":"","Security":"","Commander":""};
+    const arrowToJob=document.getElementById("jobs").getElementsByTagName("i");
+    console.log(arrowToJob);
+    const jobs= document.getElementsByClassName("work-info");
+    console.log(jobs);
+    for(let i=0;i<arrowToJob.length-1;i++){
+        arrowToJob[i].addEventListener("click",function(){
+            jobs[0].getElementsByTagName("h5")[0].innerHTML=Object.keys(jobsObj)[i];
+            jobs[0].getElementsByTagName("p")[0].innerHTML=jobsObj[i];
+            jobs[0].style.visibility = 'visible'; 
+        });
+    }
+
+  
+
+}
+showJobInfo();
+//createNewElement()
