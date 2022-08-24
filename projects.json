@@ -1,7 +1,7 @@
 [{
     "id": 438009920,
     "node_id": "R_kgDOGhuAQA",
-    "name": "CarGame2",
+    "name": "Car Game",
     "full_name": "GabrieLempert/CarGame2",
     "private": false,
     "owner": {
@@ -99,7 +99,7 @@
 }, {
     "id": 417866559,
     "node_id": "R_kgDOGOgjPw",
-    "name": "Coursera-Projects",
+    "name": "Coursera Project",
     "full_name": "GabrieLempert/Coursera-Projects",
     "private": false,
     "owner": {
@@ -295,7 +295,7 @@
 }, {
     "id": 461983936,
     "node_id": "R_kgDOG4lQwA",
-    "name": "Food_Fun",
+    "name": "Food Fun",
     "full_name": "GabrieLempert/Food_Fun",
     "private": false,
     "owner": {
