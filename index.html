@@ -37,10 +37,9 @@
 <body>
     <!------------------Header------------------>
     <header>
-        <nav class="nav">
-            <div class="navbar-brand">
-                <a href=""><img src="StyleSheet/protfolio_pic.png" id="profile-pic" alt="Profile-Pic" /></a>
-            </div>
+       
+        <nav>
+            <a href="" id="logo"><img src="StyleSheet/protfolio_pic.png" id="profile-pic" alt="Profile-Pic" /></a>
             <ul>
                 <li><button class="btn btn-primary"><a href="#jobs">Work Experience</a></button></li>
                 <li><button class="btn btn-primary"><a href="#projects">Projects</a></button></li>
@@ -52,12 +51,8 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <!-- #Main Body -->
-    <main>
-        <section id="about">
             <!-- #About -->
-            <div class="container-fluid">
+            <div class="container">
                 <h1>About Myself</h1>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
@@ -65,6 +60,8 @@
                                 class="fa-brands fa-github fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/gabriel-lempert-48609b1b5/" target="_blank"><i
                                 class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="mailto:gabrielempert@gmail.com?
+                        subject="subject"><i class="fa-solid fa-envelope-open-text fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -77,10 +74,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </header>
+    <!-- #Main Body -->
+    <main>
         <!-- #Jobs -->
-        <section id="jobs">
-            <div class="container">
+            <div class="container" id="jobs">
                 <div class="row">
                     <div class="col-12">
                         <h3 id="jobs-experience-head"><span class="material-icons-round "> work_history </span> Work
@@ -91,8 +89,9 @@
                 <div class="row career-path justify-content-center">
                     <div class="col-4">
                         <figure>
-                            <i class="fa-solid fa-angle-right"></i>
+                            
                             <blockquote class="blockquote">
+                                <i class="fa-solid fa-angle-right"></i>
                                 Bright Data ( former Luminati )
                             </blockquote>
                             <figcaption class="blockquote-footer ">
@@ -101,8 +100,9 @@
                         </figure>
                         <hr>
                         <figure>
-                            <i class="fa-solid fa-angle-right"></i>
+                            
                             <blockquote class="blockquote ">
+                                <i class="fa-solid fa-angle-right"></i>
                                 Rafael Industry
                             </blockquote>
                             <figcaption class="blockquote-footer ">
@@ -111,8 +111,9 @@
                         </figure>
                         <hr>
                         <figure>
-                            <i class="fa-solid fa-angle-right"></i>
+                            
                             <blockquote class="blockquote ">
+                                <i class="fa-solid fa-angle-right"></i>
                                 IDF
                             </blockquote>
                             <figcaption class="blockquote-footer ">
@@ -133,18 +134,23 @@
                     </div>
                 </div>
             </div>
-        </section>
         <!-- #Skills-->
-        <section id="#skills">
-            <div class="container">
+            <div class="container" id="skills">
                 <div class="row">
                     <h3>Educations and Skills</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-3 skill-table" id="applied-skills">
                         <h5>Education</h5>
-                        <hr>
-
+                        <hr style="text-align:center;">
+                        <div class="list-group">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                              </div>
+                              <p class="mb-1">Some placeholder content in a paragraph.</p>
+                              <small>And some small print.</small>
+                        </div>
                     </div>
                     <div class="col-3 skill-table" id="education">
                         ad
@@ -152,20 +158,17 @@
                     <div class="col-3 skill-table" id="personal-skills">
                         ad
                     </div>
-
                 </div>
             </div>
-        </section>
         <!-- #Projects -->
-        <section id="projects">
-            <div class="container">
+            <div class="container" id="projects">
                 <div class="row">
                     <div class="col-12 ">
                         <h3 class="text-center"><i class="fa-solid fa-laptop-code"></i>Projects</h3>
                     </div>
                 </div>
 
-                <div class="row justify-content-center" id="projects-showcase">
+                <div class="row " id="projects-showcase">
                     <div class="col-4 projects-scroller">
                         <ul id="project-list">
                         </ul>
@@ -176,7 +179,6 @@
                     </div>
                 </div>
             </div>
-        </section>
     </main>
     <!-- #footer -->
     <footer>
