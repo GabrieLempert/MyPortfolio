@@ -11,8 +11,6 @@ html {
   background-image: cover;
 }
 body {
-  background-image: url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
-  background-repeat: no-repeat;
   color: rgb(45, 25, 172);
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -21,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-attachment: scroll;
   box-sizing: border-box;
 }
 h3,
@@ -32,13 +29,23 @@ h5 {
   margin: 10px 0 5px;
 }
 main {
-  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly ;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   width: 100%;
-  top: 40vh;
 }
-/*NAVBAR AND HEADER*/
+h3 i{
+  margin-right: 1vw;
+}
+/*End Body*/
+/*--------------------------------*/
+
+/*HEADER*/
+/*Navbar*/
 header {
   text-align: center;
   height: 10%;
@@ -49,12 +56,7 @@ header {
   flex-wrap: wrap;
   color: rgb(187, 192, 191);
   width: 100%;
-}
-header .container{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  border-bottom: #9ecaed 2px solid;
 }
 header nav {
   color: whitesmoke;
@@ -100,33 +102,33 @@ nav li {
   border: solid black 2px;
   border-radius: 50%;
 }
-
+/*End Navbar*/
+/*--------------------------------*/
 /*HERO*/
 
-header .container-fluid {
-  margin: 0;
-  height: 100%;
-  float: right;
-  position: relative;
+header .container {
+  margin: 0 auto;
+  justify-content: space-evenly;
   align-items: center;
-  border-bottom: #6675ff 2px solid;
-  background-color: rgba(77, 68, 153, 0.8);
+  clear: both;
+}
+#about-header{
+  margin-bottom: 2vh;
 }
 header h1,
 header p {
   text-align: center;
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 1vh;
 }
 header h1 {
   width: 50%;
   display: inline;
-  margin: 0;
 }
 header .row .col-lg-6 {
+  margin: 1vh 1vh;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
   display:flex;
   overflow: visible;
   justify-content: center;
@@ -136,28 +138,37 @@ header a  {
   color: whitesmoke;
   margin: 0 5px 0 5px;
 }
+/*End Hero*/
+/*End Header*/
+/*--------------------------------*/
 /*JOBS SECTION*/
-.blockquote-footer {
+h3:nth-of-type(1){
+  margin-top: 2vh;
+}
+
+#jobs .blockquote-footer {
   color: #c3aff5;
   font-size: 16px;
+  position: relative;
+  left:2%;
 }
 hr:not([size]) {
   width: 100%;
   margin: 0;
 }
 
-figure {
+#jobs figure {
   margin-top: 20px;
   width: 100%;
 }
-li {
+#jobs li {
   list-style: none;
 }
-figure i:hover {
+#jobs figure i:hover {
   color: azure;
   cursor: pointer;
 }
-blockquote {
+#jobs blockquote {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -172,12 +183,6 @@ figcaption {
 .container[id="jobs"] blockquote i{
   margin: 1vh 1vw;
 }
-h2 {
-  text-align: center;
-}
-h2 * {
-  margin: 10px;
-}
 #jobs .work-info {
   height: 100%;
   border: #0033cc 2px solid;
@@ -185,6 +190,7 @@ h2 * {
   border-radius: 10px 10px 10px 10px;
   left: 40%;
 }
+
 .job-title {
   background-color: rgba(68, 65, 65, 0.2);
   text-align: center;
@@ -192,6 +198,9 @@ h2 * {
   margin: 0;
   padding-top: 4px;
   border-bottom: rgba(68, 65, 65, 0.2) solid 2px;
+}
+.job-role  p{
+  margin-top: 1vh;
 }
 .job-role  p i{
   font-size: 1.3rem;
@@ -204,7 +213,8 @@ h2 * {
 #jobs .row:nth-of-type(2) {
   margin-bottom: 7px;
 }
-
+/*End Jobs SECTION*/
+/*--------------------------------*/
 /*PROJECTS SECTION*/
 
 
@@ -213,15 +223,13 @@ h2 * {
   border: darkorchid 2px solid;
   border-radius: 10px;
 }
-.container:not([id="about"]){
-min-height: 20vh;
-margin-bottom: 1vh;
-}
-
 .container[id="projects"] .row:nth-of-type(2){
   width: 50%;
   margin: 0 auto;
   height: 40vh;
+}
+.container[id="projects"]{
+  margin-bottom: 1vh;
 }
 .container[id="projects"] .row:nth-of-type(2) .col-8 .projects-scroller {
   background: rgba(77, 68, 153, 0);
@@ -287,11 +295,43 @@ margin-bottom: 1vh;
 .project-info p {
   padding: 10px;
 }
+
+/*End PROJECTS SECTION*/
+/*--------------------------------*/
+
 /*SKILLS*/
-.skill-table {
+#skills .col-3{
+  max-height: 398px;
   margin: 0 auto 10px;
+  overflow-y: scroll;
   background-color: rgba(255, 250, 250, 0.8);
   border-radius: 10px;
   border: #0033cc 2px solid;
+  display: flex;
+  flex-direction: column;
 }
+.col-3 h5 i{
+  margin-right: 1vh;
+}
+
+.skill-table figure:nth-of-type(1){
+  margin-top: 1vh;
+}
+
+.skill-table blockquote{
+  font-size: 1rem;
+}
+#frontend-skills figure{
+  width: 60%;
+}
+#frontend-skills .blockquote-footer{
+  font-size: 0.8rem;
+}
+.skill-table blockquote i{
+margin-right:0.5vw;
+}
+/*End SKILLS*/
+/*--------------------------------*/
+
 /*FOOTER*/
+/*End FOOTER*/
