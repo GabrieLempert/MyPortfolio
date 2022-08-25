@@ -137,14 +137,8 @@ header a  {
   margin: 0 5px 0 5px;
 }
 /*JOBS SECTION*/
-
-/*TEMP*/
-section[id="jobs"] {
-  margin: 10px;
-}
-/*TEMP*/
 .blockquote-footer {
-  color: #8165c6;
+  color: #c3aff5;
   font-size: 16px;
 }
 hr:not([size]) {
@@ -160,7 +154,6 @@ li {
   list-style: none;
 }
 figure i:hover {
-  font-size: 3rem;
   color: azure;
   cursor: pointer;
 }
@@ -170,25 +163,20 @@ blockquote {
   align-items: center;
   background-color: rgba(121, 115, 169, 0.8);
   border-radius: 10px;
-  padding-left: 4px;
   position: relative;
   text-align: start;
 }
 figcaption {
   text-align: start;
 }
-
-.fa-angle-right {
-  font-size: 1.5rem;
+.container[id="jobs"] blockquote i{
+  margin: 1vh 1vw;
 }
 h2 {
   text-align: center;
 }
 h2 * {
   margin: 10px;
-}
-.career-path * {
-  margin: 5px;
 }
 #jobs .work-info {
   height: 100%;
@@ -205,7 +193,11 @@ h2 * {
   padding-top: 4px;
   border-bottom: rgba(68, 65, 65, 0.2) solid 2px;
 }
-
+.job-role  p i{
+  font-size: 1.3rem;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
 .job-role {
   text-align: center;
 }
