@@ -33,7 +33,8 @@ async function showProjectInfo(){
     await createNewElement()
     let projectInList = document.getElementById("project-list").getElementsByClassName("project-item");
     let header=document.getElementsByClassName("project-info")[0].getElementsByTagName("h4")[0];
-    let descp=document.getElementsByClassName("project-info")[0].getElementsByTagName("p")[0]
+    let descp=document.getElementsByClassName("project-info")[0].getElementsByTagName("p")[0];
+    let projectLink=document.getElementById("project-link");
     console.log(header);
     let project = await getProject();  
     for (let index = 0; index < projectInList.length; index++) {
@@ -43,6 +44,8 @@ async function showProjectInfo(){
             descp.innerHTML =`${changeString(project[index].description)}`
             else
             descp.innerHTML="Add description";
+            projectLink.href=project[index].html_url;
+
         });    
     }
 }

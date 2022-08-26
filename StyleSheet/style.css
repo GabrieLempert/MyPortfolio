@@ -35,12 +35,12 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
   background-attachment: scroll;
   background-repeat: no-repeat;
   width: 100%;
 }
-h3 i{
+h3 i {
   margin-right: 1vw;
 }
 /*End Body*/
@@ -67,7 +67,7 @@ header nav {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  }
+}
 nav ul {
   list-style: none;
   margin: 10px 5px;
@@ -114,7 +114,7 @@ header .container {
   align-items: center;
   clear: both;
 }
-#about-header{
+#about-header {
   margin-bottom: 2vh;
 }
 header h1,
@@ -131,12 +131,12 @@ header h1 {
 header .row .col-lg-6 {
   margin: 1vh 1vh;
   text-align: center;
-  display:flex;
+  display: flex;
   overflow: visible;
   justify-content: center;
 }
 
-header a  {
+header a {
   color: whitesmoke;
   margin: 0 5px 0 5px;
 }
@@ -144,7 +144,7 @@ header a  {
 /*End Header*/
 /*--------------------------------*/
 /*JOBS SECTION*/
-h3:nth-of-type(1){
+h3:nth-of-type(1) {
   margin-top: 2vh;
 }
 
@@ -152,7 +152,7 @@ h3:nth-of-type(1){
   color: #c3aff5;
   font-size: 16px;
   position: relative;
-  left:2%;
+  left: 2%;
 }
 hr:not([size]) {
   width: 100%;
@@ -182,7 +182,7 @@ hr:not([size]) {
 figcaption {
   text-align: start;
 }
-.container[id="jobs"] blockquote i{
+.container[id="jobs"] blockquote i {
   margin: 1vh 1vw;
 }
 #jobs .work-info {
@@ -201,10 +201,10 @@ figcaption {
   padding-top: 4px;
   border-bottom: rgba(68, 65, 65, 0.2) solid 2px;
 }
-.job-role  p{
+.job-role p {
   margin-top: 1vh;
 }
-.job-role  p i{
+.job-role p i {
   font-size: 1.3rem;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -219,27 +219,25 @@ figcaption {
 /*--------------------------------*/
 /*PROJECTS SECTION*/
 
-
 #projects-showcase {
   background: rgba(255, 255, 255, 0.629);
   border: darkorchid 2px solid;
   border-radius: 10px;
 }
-.container[id="projects"] .row:nth-of-type(2){
+.container[id="projects"] .row:nth-of-type(2) {
   width: 50%;
   margin: 0 auto;
   height: 40vh;
 }
-.container[id="projects"]{
+.container[id="projects"] {
   margin-bottom: 1vh;
 }
 .container[id="projects"] .row:nth-of-type(2) .col-8 .projects-scroller {
   background: rgba(77, 68, 153, 0);
   border-right: rgba(68, 65, 65, 0.2) 1px solid;
   padding-right: 7px;
-
 }
-.projects-scroller{
+.projects-scroller {
   display: flex;
   flex-direction: column;
 }
@@ -249,17 +247,21 @@ figcaption {
   overflow-x: hidden;
   margin: auto;
   padding-left: 0;
+  scroll-behavior: smooth;
 }
 .projects-scroller li {
-  font-size: 14px;
-  margin-bottom: 2px;
+  font-size: 1rem;
+  margin: 1vh auto;
   border-radius: 10px;
   align-items: center;
-  height: 15%;
-  width: 80%;
+  flex-wrap: wrap;
+  height: 7vh;
+  align-items: center;
+  display: flex;
   background-color: rgba(255, 250, 250, 0.8);
   text-align: center;
-  white-space: nowrap;
+  justify-content: center;
+  width: 12vw;
 }
 ::-webkit-scrollbar {
   width: 3px;
@@ -285,23 +287,36 @@ figcaption {
 
 .projects-scroller li:hover {
   background-color: white;
+  position: relative;
+  left: 2%;
   box-shadow: 0 0 10px #9ecaed;
   cursor: pointer;
 }
 .project-info {
   text-align: center;
   padding-top: 20px;
+  position: relative;
 }
 
 .project-info p {
   padding: 10px;
 }
 
+.project-info i:hover::after {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  content: "To repository";
+  text-decoration: none;
+  position: sticky;
+  text-align: center;
+}
+
 /*End PROJECTS SECTION*/
 /*--------------------------------*/
 
 /*SKILLS*/
-#skills .col-3{
+#skills .col-3 {
   max-height: 398px;
   margin: 0 auto 10px;
   overflow-y: scroll;
@@ -311,56 +326,63 @@ figcaption {
   display: flex;
   flex-direction: column;
 }
-.col-3 h5 i{
+.col-3 h5 i {
   margin-right: 1vh;
 }
 
-.skill-table figure:nth-of-type(1){
+.skill-table figure:nth-of-type(1) {
   margin-top: 1vh;
 }
 
-.skill-table blockquote{
+.skill-table blockquote {
   font-size: 1rem;
 }
-#frontend-skills figure{
+#frontend-skills figure {
   width: 60%;
 }
-#frontend-skills .blockquote-footer{
+.skill-table .blockquote-footer a:hover {
+  color: #9ecaed;
+  cursor: pointer;
+}
+.skill-table .blockquote-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+#frontend-skills .blockquote-footer {
   font-size: 0.8rem;
 }
-.skill-table blockquote i{
-margin-right:0.5vw;
+.skill-table blockquote i {
+  margin-right: 0.5vw;
 }
 /*End SKILLS*/
 /*--------------------------------*/
 /*FOOTER*/
-footer{
-  border-top:#0033cc solid 1px;
+footer {
+  border-top: #0033cc solid 1px;
   background-color: darkblue;
   color: beige;
   padding-top: 1vh;
   height: 100%;
 }
-footer .container{
+footer .container {
   margin: 0 auto;
   text-align: center;
 }
-footer h7:not([id="copyright"]){
+footer h7:not([id="copyright"]) {
   text-decoration: underline;
 }
-footer p{
+footer p {
   font-size: 0.8rem;
   margin: 0.3vw 0 0 0;
 }
-footer .col-4{
+footer .col-4 {
   padding-bottom: 0.5vh;
-
 }
-footer .col-4:nth-of-type(1) p:hover{
-  color:aqua;
+footer .col-4:nth-of-type(1) p:hover {
+  color: aqua;
   cursor: pointer;
 }
-footer .container .col-4:nth-of-type(3){
+footer .container .col-4:nth-of-type(3) {
   display: flex;
   align-items: center;
   justify-content: center;
