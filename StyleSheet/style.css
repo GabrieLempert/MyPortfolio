@@ -300,12 +300,20 @@ figcaption {
   text-align: center;
   padding-top: 20px;
   position: relative;
+  margin: 0 auto;
 }
 
 .project-info p {
   padding: 10px;
 }
-
+.project-info a{
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+}
+.project-info i:hover{
+  cursor: pointer;
+}
 .project-info i:hover::after {
   display: flex;
   flex-direction: column;
