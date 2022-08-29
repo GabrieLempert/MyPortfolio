@@ -1,8 +1,16 @@
 async function getProject() {
+   try{
     let response = await fetch("https://api.github.com/users/GabrieLempert/repos",{
         auth: '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'
         });
-    let projects = await response.json();
+   }catch(err){
+      alert("Sorry the GitAPI reached is limit")
+   }
+    try{
+        let projects = await response.json();
+    }catch(err){
+        alert("Somthing Went wrong");
+    }
     return projects;
 
 }
