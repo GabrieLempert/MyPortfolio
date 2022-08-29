@@ -1,7 +1,7 @@
 async function getProject() {
-    //let response = await fetch("https://api.github.com/users/GabrieLempert/repos")
-    let response = await fetch("projects.json")
-
+    let response = await fetch("https://api.github.com/users/GabrieLempert/repos",{
+        auth: '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'
+        });
     let projects = await response.json();
     return projects;
 
