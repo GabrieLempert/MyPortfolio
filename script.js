@@ -1,6 +1,8 @@
 async function getProject() {
+  let clientID="Iv1.185967aa2464596a";
+  let clientSecret="dc5f46776c23ecbb0b7c11c4c95a91cea55b6b52";
   const headers = {
-    Authorization: `Token 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`,
+    Authorization: `Basic ` + `${clientID}:${clientSecret}`,
   };
   try {
     let response = await fetch(
@@ -11,6 +13,7 @@ async function getProject() {
       }
     );
     let projects = await response.json();
+    console.log(projects);
     return projects;
   } catch (error) {
     alert("Sorry I reached GitHubAPI rate limit");
